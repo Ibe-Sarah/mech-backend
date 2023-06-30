@@ -1,0 +1,77 @@
+
+
+
+.container{
+ justify-content: center;
+ padding-top: 5em;
+}
+.container h4{
+    color: #8E98A8;
+    font-family: 'Archivo', sans-serif;
+}
+.logo{
+    width: 15%;
+}
+.gif{
+    width: 70%;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    height: 150% !important;
+    background-color: #F2F6FD;
+    border-radius: 5px;
+    border: 1px solid #EBEDF0;
+    padding: 1em;
+}
+
+form h3{
+    font-family: 'Clash Grotesk', sans-serif;
+    color: #091E42;
+}
+
+label {
+    display:inline-block;
+    color: #091E42;
+    font-size: 15px;
+    font-family: 'Archivo', sans-serif;
+    font-weight: 600;
+    
+    }
+    input{
+        display: block;
+    }
+
+
+    #name, #password{
+    width: 90%;
+    height:3em !important;
+    border: 1px solid #EBEDF0;
+    background-color: #FDFDFD;
+    border-radius: 10px;
+    padding-left: 2em;
+}
+
+form button{
+    background-color: #0047B3;
+    color: white;
+    font-family: 'Archivo', sans-serif;
+    border-radius: 7px;
+    width: 50%;
+    height: 3em;
+    border: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+   .far{
+
+    margin-left: 20em; 
+    cursor: pointer;
+   }
+   .fa-eye{
+    margin-top: -3.8em !important;
+    margin-left: 17.7em;
+   }
+
