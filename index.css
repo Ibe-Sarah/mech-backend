@@ -177,7 +177,6 @@ form button{
   .general{
     display: flex;
     background-color: red !important;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2) !important;
     justify-content: center;
     width: 70%;
     margin-left: 6em;
@@ -196,6 +195,7 @@ form button{
 
   .card{
     padding-top: 1em;
+    
   }
   
   .card-container img{

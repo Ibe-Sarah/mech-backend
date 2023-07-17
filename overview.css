@@ -8,6 +8,8 @@
     left: 17.6%;
     bottom: 78%;
     gap: 13em;
+    /* height: 65%; */
+
 }
 
 .time-container h5{
@@ -18,13 +20,20 @@
 .time{
     display: flex;
     gap: 2em !important;
-    border-bottom: 1px solid #E1E3E5;
     font-family: 'Archivo', sans-serif;
+    border-bottom: 1px solid #E1E3E5;
     color: #6D7175;
 
 }
 
 .time h6{
+
+}
+
+a{
+    text-decoration: none;
+    color: #6D7175 !important;
+    
 }
 .right-sidebar{
     display: flex;
@@ -123,6 +132,7 @@ th{
     padding-right: 3em;
     padding-left: 2em;
     font-family: 'Archivo', sans-serif;
+    color: #091E42;
     
    
 }
@@ -145,4 +155,16 @@ td{
     padding-top: 1em;
     padding-bottom: 0.5em;
     font-family: 'Archivo', sans-serif;
+    color: #091E42;
+    font-size: 0.9em;
+}
+.active:after {
+    content: ""; /* This is necessary for the pseudo element to work. */ 
+    display: block; /* This will put the pseudo element on its own line. */
+    /* This will center the border. */
+    text-align: left;
+    height: 65%;
+    width: 100%; /* Change this to whatever width you want. */
+    padding-top: 5px; /* This creates some space between the element and the border. */
+    border-bottom: 3px solid #091E42; /* This creates the border. Replace black with whatever color you want. */
 }
