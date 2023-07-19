@@ -1,0 +1,233 @@
+.breadcrumb{
+    display: flex;
+    justify-content: space-between !important;
+    position: absolute;
+    gap: 47em;
+    top: 22%;
+    left: 20%;
+}
+
+.breadcrumb h5{
+    font-family: 'Archivo', sans-serif;
+    font-size: 1em;
+    color: #091E42;
+}
+.breadcrumb button{
+    background-color: #0047B3;
+    border: none;
+    border-radius: 3px;
+    padding: 0.4em 1em;
+    color: white;
+    font-family: 'Archivo', sans-serif;
+}
+.dropdown-button{
+    display: flex;
+    position: absolute;
+    /* background-color: white !important; */
+    left: 47.5%;
+    top: 30%;
+    gap: 1em;
+    color: #091E42;
+    font-family: 'Archivo', sans-serif;
+
+}
+
+.dropdown-button button{
+    padding: 0.2em 0.7em;
+    border: 1px solid #AEB4B9;
+    border-radius: 3px;
+    background-color: white;
+    font-family: 'Archivo', sans-serif;
+    padding-left: 0.5em;
+    font-size: 0.9em;
+
+}
+
+.dropdown-button input{
+    border-radius: 5px;
+    border: 1px solid #AEB4B9;
+    padding-left: 3em;
+
+}
+.btn{
+    border: 1px solid #AEB4B9;
+    background-color: white;
+    font-size: 0.9em;
+}
+.pagess{
+    position: absolute;
+    left: 45%;
+    top: 95%;
+}
+
+.status{
+    display: flex;
+    position: absolute;
+    top: 42%;
+    left: 18%;
+    gap: 1em;
+    color: #7A8699;
+    background-color: #FFFFFF;
+    font-family: 'Archivo', sans-serif;
+    font-size: 1em;
+}
+.status h5{
+    font-size: 0.7em;
+    padding: 1em 2em;
+}
+.head{
+    font-size: 0.8em;
+    padding-left: 0em !important;
+    padding-right: 0em !important;
+}
+
+
+.first-col label, .second-col label{
+    display: inline-block;
+    font-family: 'Archivo',sans-serif;
+    padding-top: 1em;
+}
+
+.first-col input, .second-col input, .first-col .dropdown, .second-col .dropdown{
+    display: block;
+    font-family: 'Archivo',sans-serif;
+
+}
+form input{
+    border: 1.3px solid #003E9C;
+    border-radius: 5px;
+    padding-left: 0.5em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    color: #7A8699 !important;
+
+    /* padding-right: 3em; */
+
+}
+
+.modal-header{
+    background-color: #A5A5A5;
+}
+.modal-title{
+    font-family: 'Archivo', sans-serif;
+    font-weight: 600;
+    color:#091E42;
+    font-size: 1.1em;
+
+}
+
+ .btn-close{
+    height: 0.7em !important;
+    color: #091E42 !important;
+}
+.modal-body{
+    background-color: #f6f6f6 !important;
+    border: none !important;
+    padding-bottom: 3em !important;
+    
+}
+
+form{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.first-col .dropdown, .second-col .dropdown{
+    width: 200%;
+}
+.dropdown .btn{
+    text-align: left !important;
+    color: #7A8699;
+    font-size: 1em ;
+    border: 1.3px solid #0047B3;
+
+}
+
+.modal-save{
+    margin-left: 9em;
+    margin-top: 1em;
+    padding: 0.7em 5em;
+    background-color: #A5A5A5;
+    font-family: 'Archivo', sans-serif;
+    color: #091E42;
+    border: none;
+    border-radius: 3px;
+}
+
+.come-from-modal.left .modal-dialog,
+.come-from-modal.right .modal-dialog {
+    /* position: fixed; */
+    margin: auto;
+    /* width: 320px; */
+    /* height: 100%; */
+    -webkit-transform: translate3d(0%, 0, 0);
+    -ms-transform: translate3d(0%, 0, 0);
+    -o-transform: translate3d(0%, 0, 0);
+    transform: translate3d(0%, 0, 0);
+}
+
+.come-from-modal.left .modal-content,
+.come-from-modal.right .modal-content {
+    /* height: 100%; */
+    /* overflow-y: auto; */
+    border-radius: 0px;
+}
+
+.come-from-modal.left .modal-body,
+.come-from-modal.right .modal-body {
+    padding: 15px 15px 80px;
+}
+.come-from-modal.right.fade .modal-dialog {
+    right: -420px;
+    -webkit-transition: opacity 0.3s linear, right 0.5s ease-out;
+    -moz-transition: opacity 0.3s linear, right 0.3s ease-out;
+    -o-transition: opacity 0.3s linear, right 0.3s ease-out;
+    transition: opacity 0.3s linear, right 0.3s ease-out;
+}
+
+.come-from-modal.right.fade.in .modal-dialog {
+    right: 0;
+}
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 85%;
+    background-color: white;
+    color: white;
+    padding: 10px;
+    display: none;
+    border-radius: 3px;
+
+}
+
+
+.ellip{
+    padding-right: 3em;
+    padding-top: 1em;
+}
+
+.edit, .view{
+    gap: 1.5em;
+}
+.edit p, .view p{
+color: #091E42;
+margin-top: -0.3em;
+font-family: 'Archivo', sans-serif;
+font-weight: 600;
+}
+
+.edit p{
+    cursor: pointer;
+}
+
+.back{
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    padding: 0.5em 0.7em;
+    border-radius: 5px;
+    background-color: #F5F6F7;
+    border: 1px solid #DFE2E6;
+    font-size: 13.3px;
+    font-family: 'Archivo', sans-serif;
+}

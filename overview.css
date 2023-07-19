@@ -133,6 +133,7 @@ th{
     padding-left: 2em;
     font-family: 'Archivo', sans-serif;
     color: #091E42;
+    background-color: #A5A5A5;
     
    
 }
@@ -144,12 +145,10 @@ th:first-child {
 th:last-child {
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
+
 }
 
-.head{
-    background-color: #A5A5A5;
-   
-}
+
 td{
     padding-left: 2em;
     padding-top: 1em;
