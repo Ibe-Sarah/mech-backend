@@ -24,7 +24,7 @@
     display: flex;
     position: absolute;
     /* background-color: white !important; */
-    left: 47.5%;
+    left: 44.5%;
     top: 30%;
     gap: 1em;
     color: #091E42;
@@ -49,10 +49,40 @@
     padding-left: 3em;
 
 }
+
+.dropdown-menu{
+    border: none;
+
+}
+.dropdown-item{
+    color: #091E42 !important;
+    font-weight: bold;
+    font-family: 'Archivo', sans-serif;
+    font-size: 0.9em;
+    
+}
 .btn{
     border: 1px solid #AEB4B9;
     background-color: white;
     font-size: 0.9em;
+}
+
+.chips{
+    display: flex;
+    gap: 1em;
+    font-family: 'Archivo', sans-serif;
+    padding: 0.4em 0.5em;
+    
+}
+
+.chips h6{
+    background-color: #E6F0FF;
+    border-radius: 7px;
+    color: #091E42;
+    font-size: 0.6em;
+    padding: 0.5em 0.8em;
+    /* width: 180% !important; */
+
 }
 .pagess{
     position: absolute;

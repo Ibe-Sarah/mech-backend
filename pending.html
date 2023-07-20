@@ -104,11 +104,30 @@
     <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
       Period
     </button>
-    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-      <li><a class="dropdown-item" href="#">Today</a></li>
-      <li><a class="dropdown-item" href="#">This Week</a></li>
-      <li><a class="dropdown-item" href="#">This Month</a></li>
-    </ul>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+<div class="chips-cont">
+  <div class="chips">
+  <h6 style="background-color: #0047B3; color: white;">Today</h6>
+  <h6>This Week</h6>
+  <h6>This Month</h6>
+  <h6>This Year</h6>
+  </div>
+  <div style="display: flex; gap: 1em; padding-left: 0.5em; padding-right: 0.3em;">
+    <div style="display: flex; flex-direction: column;">
+      <p style="font-family: 'Archivo', sans-serif; font-size: 0.8em; ">From</p>
+      <input type="date" style="padding-left: 0em; text-align: center; margin-top: -1em; font-family: 'Archivo', sans-serif; background-color: #F6F6F6; border: none; color: #7A8699;">
+
+    </div>
+
+    <div style="display: flex; flex-direction: column; gap: 0em; padding-left: 0.5em; padding-right: 0.3em;">
+      <p style="font-family: 'Archivo', sans-serif; font-size: 0.8em;">To</p>
+
+      <input type="date" style="padding-left: 0em; text-align: center; margin-top: -1em; font-family: 'Archivo', sans-serif; background-color: #F6F6F6; border: none; color: #7A8699;">
+    </div>
+    
+  </div>
+</div>
+    </div>
   </div>
 
   <div class="dropdown">
@@ -116,9 +135,9 @@
       Car Type
     </button>
     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-      <li><a class="dropdown-item" href="#">Today</a></li>
-      <li><a class="dropdown-item" href="#">This Week</a></li>
-      <li><a class="dropdown-item" href="#">This Month</a></li>
+      <li><a class="dropdown-item" href="#">Electric Car</a></li>
+      <li><a class="dropdown-item" href="#">SUV</a></li>
+      <li><a class="dropdown-item" href="#">Family Car</a></li>
     </ul>
   </div>
 
@@ -126,13 +145,29 @@
     <button class="btn  dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
       Color
     </button>
-    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-      <li><a class="dropdown-item" href="#">Today</a></li>
-      <li><a class="dropdown-item" href="#">This Week</a></li>
-      <li><a class="dropdown-item" href="#">This Month</a></li>
+    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" style="padding-right: 0em !important; width: 30%;">
+      <li><a class="dropdown-item" href="#">Red</a></li>
+      <li><a class="dropdown-item" href="#">Blue</a></li>
+      <li><a class="dropdown-item" href="#">Green</a></li>
+      <li><a class="dropdown-item" href="#">Yellow</a></li>
+      <li><a class="dropdown-item" href="#">Black</a></li>
+
+
     </ul>
   </div>
-  <button> <img src="assets/sort_minor.png" width="40%" style="padding-right: 0.6em !important;">Sort</button>
+  <div class="dropdown">
+    <button class="btn  dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+      <img src="assets/sort_minor.png" width="36%" style="padding-right: 0.6em !important;">Sort
+    </button>
+    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+      <li><a class="dropdown-item" href="#">Most Recent</a></li>
+      <li><a class="dropdown-item" href="#">Oldest</a></li>
+      
+
+
+    </ul>
+  </div>
+  <!-- <button> <img src="assets/sort_minor.png" width="40%" style="padding-right: 0.6em !important;">Sort</button> -->
 
 </div>
 <div class="status">
@@ -141,7 +176,7 @@
    <a href="completed.html"><h5>Completed(2)</h5></a>
 </div>
 
-<section style="background-color: #f6f6f6 !important; height: 95vh; width: 85%;margin-left: 12.5em; margin-top: -34.3em;">
+<section style="background-color: #f6f6f6 !important; height: 95vh; width: 85%;margin-left: 12.5em; margin-top: -38.3em;">
 <div id="pagination-one" class="bottom-container" style="top: 48%; background-color: white !important; padding-top: 0em; padding-left: 0em; padding-right: 0em;">
   <!-- <div class="client-data">
     <h5>Clients Data</h5>
