@@ -1,7 +1,7 @@
 .library-dropdown{
     display: flex;
     justify-content: space-around;
-    gap: 15em;
+    gap: 10em;
     position: absolute;
     top: 25%;
     left: 22%;
@@ -11,11 +11,15 @@
     display: flex;
     gap: 1em;
 }
+
+.first-drop .dropdown{
+
+}
 .second-drop{
     display: flex;
 }
 .second-drop input{
-    padding-left: 2em;
+    padding-left: 1.5em;
 }
 .library-image{
     display: grid;
