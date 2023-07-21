@@ -45,17 +45,16 @@
 
             <!-- <i class="fas fa-chevron-up chevron"></i> -->
           </li>
-          <li class="client">
+          <li class="client focus">
             <i class="fas fa-user"></i>
             <a style="color: #091E42 !important;" href="clients.html"> Client Data</a>
-
             <!-- <i class="fas fa-chevron-down chevron"></i>
             <ul class="submenu">
               <li>Profile</li>
               <li>Contacts</li>
             </ul> -->
           </li>
-          <li class="bookings focus">
+          <li class="bookings">
             <i class="fas fa-calendar-alt"></i>
             <a style="color: #091E42 !important;" href="pending.html"> Bookings</a>
 
@@ -93,95 +92,97 @@
 </div>
 
 <div class="breadcrumb">
-    <h5>Bookings <span style="color: #003E9C; font-weight: 600;">|In Progress</span></h5>
-    <button data-bs-toggle="modal" data-bs-target="#exampleModal" style="margin-left: 1em;">Add Bookings</button>
+    <h5> <span style="color: #003E9C; font-weight: 600; margin-left: 3em;">Client Data</span></h5>
+    <button data-bs-toggle="modal" data-bs-target="#exampleModal" style="margin-left: -2em;">Add Client</button>
 </div>
 
 
-<div class="dropdown-button">
-  <i class="fa fa-search" aria-hidden="true" style="position:absolute; left: 4%; bottom: 25%; font-size: 15px;"></i> <input type="search" placeholder="Abby Kate" >
+<div class="dropdown-button" style="margin-left: -6em;">
+   <i class="fa fa-search" aria-hidden="true" style="position:absolute; left: 4%; bottom: 25%; font-size: 15px;"></i> <input type="search" placeholder="Abby Kate" >
 
 <div class="dropdown">
-   <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-     Period
-   </button>
-   <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+    <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+      Period
+    </button>
+
+
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
 <div class="chips-cont">
- <div class="chips">
- <h6 style="background-color: #0047B3; color: white;">Today</h6>
- <h6>This Week</h6>
- <h6>This Month</h6>
- <h6>This Year</h6>
- </div>
- <div style="display: flex; gap: 1em; padding-left: 0.5em; padding-right: 0.3em;">
-   <div style="display: flex; flex-direction: column;">
-     <p style="font-family: 'Archivo', sans-serif; font-size: 0.8em; ">From</p>
-     <input type="date" style="padding-left: 0em; text-align: center; margin-top: -1em; font-family: 'Archivo', sans-serif; background-color: #F6F6F6; border: none; color: #7A8699;">
+  <div class="chips">
+  <h6 style="background-color: #0047B3; color: white;">Today</h6>
+  <h6>This Week</h6>
+  <h6>This Month</h6>
+  <h6>This Year</h6>
+  </div>
+  <div style="display: flex; gap: 1em; padding-left: 0.5em; padding-right: 0.3em;">
+    <div style="display: flex; flex-direction: column;">
+      <p style="font-family: 'Archivo', sans-serif; font-size: 0.8em; ">From</p>
+      <input type="date" style="padding-left: 0em; text-align: center; margin-top: -1em; font-family: 'Archivo', sans-serif; background-color: #F6F6F6; border: none; color: #7A8699;">
 
-   </div>
+    </div>
 
-   <div style="display: flex; flex-direction: column; gap: 0em; padding-left: 0.5em; padding-right: 0.3em;">
-     <p style="font-family: 'Archivo', sans-serif; font-size: 0.8em;">To</p>
+    <div style="display: flex; flex-direction: column; gap: 0em; padding-left: 0.5em; padding-right: 0.3em;">
+      <p style="font-family: 'Archivo', sans-serif; font-size: 0.8em;">To</p>
 
-     <input type="date" style="padding-left: 0em; text-align: center; margin-top: -1em; font-family: 'Archivo', sans-serif; background-color: #F6F6F6; border: none; color: #7A8699;">
-   </div>
-   
- </div>
+      <input type="date" style="padding-left: 0em; text-align: center; margin-top: -1em; font-family: 'Archivo', sans-serif; background-color: #F6F6F6; border: none; color: #7A8699;">
+    </div>
+    
+  </div>
 </div>
-   </div>
- </div>
+    </div>
+  </div>
 
- <div class="dropdown">
-   <button class="btn  dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-     Car Type
-   </button>
-   <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-     <li><a class="dropdown-item" href="#">Electric Car</a></li>
-     <li><a class="dropdown-item" href="#">SUV</a></li>
-     <li><a class="dropdown-item" href="#">Family Car</a></li>
-   </ul>
- </div>
+  <div class="dropdown">
+    <button class="btn  dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+      Car Type
+    </button>
+    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+      <li><a class="dropdown-item" href="#">Electric Car</a></li>
+      <li><a class="dropdown-item" href="#">SUV</a></li>
+      <li><a class="dropdown-item" href="#">Family Car</a></li>
+    </ul>
+  </div>
 
- <div class="dropdown">
-   <button class="btn  dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-     Color
-   </button>
-   <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" style="padding-right: 0em !important; width: 30%;">
-     <li><a class="dropdown-item" href="#">Red</a></li>
-     <li><a class="dropdown-item" href="#">Blue</a></li>
-     <li><a class="dropdown-item" href="#">Green</a></li>
-     <li><a class="dropdown-item" href="#">Yellow</a></li>
-     <li><a class="dropdown-item" href="#">Black</a></li>
-
-
-   </ul>
- </div>
- <div class="dropdown">
-   <button class="btn  dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-     <img src="assets/sort_minor.png" width="36%" style="padding-right: 0.6em !important;">Sort
-   </button>
-   <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-     <li><a class="dropdown-item" href="#">Most Recent</a></li>
-     <li><a class="dropdown-item" href="#">Oldest</a></li>
-     
+  <div class="dropdown">
+    <button class="btn  dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+      Color
+    </button>
+    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" style="padding-right: 0em !important; width: 30%;">
+      <li><a class="dropdown-item" href="#">Red</a></li>
+      <li><a class="dropdown-item" href="#">Blue</a></li>
+      <li><a class="dropdown-item" href="#">Green</a></li>
+      <li><a class="dropdown-item" href="#">Yellow</a></li>
+      <li><a class="dropdown-item" href="#">Black</a></li>
 
 
-   </ul>
- </div>
- <!-- <button> <img src="assets/sort_minor.png" width="40%" style="padding-right: 0.6em !important;">Sort</button> -->
+    </ul>
+  </div>
+  <div class="dropdown">
+    <button class="btn  dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+      <img src="assets/sort_minor.png" width="36%" style="padding-right: 0.6em !important;">Sort
+    </button>
+    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+      <li><a class="dropdown-item" href="#">Most Recent</a></li>
+      <li><a class="dropdown-item" href="#">Oldest</a></li>
+      
+
+
+    </ul>
+  </div>
+  <!-- <button> <img src="assets/sort_minor.png" width="40%" style="padding-right: 0.6em !important;">Sort</button> -->
 
 </div>
 
-<button  onclick='window.location.href = "pending.html"' class="back"><img src="assets/Vector (2).png" width="22%" height="22%"> Back</button>
-
+<!-- 
 <div class="status">
-   <a href="pending.html"><h5 >Pending(5)</h5></a>
- <a href="progress.html"><h5 style="background-color: #E6F0FF; border-top: 1px solid black; font-weight: 600;color: #091E42; ">In Progress(3)</h5></a>
+   <a href="pending.html"><h5 style="background-color: #E6F0FF; border-top: 1px solid black; font-weight: 600;color: #091E42; ">Pending(5)</h5></a>
+    <a href="progress.html"><h5>In Progress(3)</h5></a>
    <a href="completed.html"><h5>Completed(2)</h5></a>
-</div>
+</div> -->
 
-<section style="background-color: #f6f6f6 !important; height: 112vh; width: 85%;margin-left: 12.5em; margin-top: -44em;">
-<div id="pagination-one" class="bottom-container" style="top: 48%; background-color: white !important; padding-top: 0em; padding-left: 0em; padding-right: 0em;">
+<section style="background-color: #f6f6f6 !important; height: 95vh; width: 85%; margin-left: 12.5em; z-index: 0; margin-top: -43.8em; ">
+
+  <div id="pagination-one" class="bottom-container" style="top: 48%; background-color: white !important; padding-top: 0em; padding-left: 0em; padding-right: 0em; left:20%">
   <!-- <div class="client-data">
     <h5>Clients Data</h5>
     <button>View All</button>
@@ -193,19 +194,19 @@
         <th>Plate Number</th>
         <th>Car Color</th>
         <th>Engine Number</th>
-        <th>Preferred Service</th>
+        <th>Email</th>
         <th>Phone Number</th>
-        <th>Date</th>
+        <!-- <th>Date</th> -->
         <th >Options</th>
     </tr>
-    <tr>
-        <td>Abby Kate</td>
+     <tr>
+        <td> <a href="client-data.html" style="color: #091E42; !important">Abby Kate </a></td>
         <td>LLI9 VBX</td>
         <td>Red</td>
         <td>52vwc10038</td>
-        <td>Car painting</td>
+        <td>abbykate.mail</td>
         <td>0233394847</td>
-        <td>19/06/2023</td>
+        <!-- <td>19/06/2023</td> -->
         <td ><i class="fa fa-ellipsis-v" aria-hidden="true" style="margin-left: 1em; cursor: pointer;" onclick="showOverlay()" ></i></td>
     </tr>
 
@@ -214,9 +215,9 @@
         <td>LT63 NNA</td>
         <td>Blue</td>
         <td>52vwc10038</td>
-        <td>Spark plug...</td>
+        <td>abbykate.mail</td>
         <td>0233394847</td>
-        <td>13/06/2023</td>
+        <!-- <td>13/06/2023</td> -->
         <td><i class="fa fa-ellipsis-v" aria-hidden="true" style="margin-left: 1em;"></i></td>
 
   </tr>
@@ -226,22 +227,34 @@
     <td>KA44 TYS</td>
     <td>Green</td>
     <td>52vwc10038</td>
-    <td>Interior custo...</td>
+    <td>kamsonjill.mail</td>
     <td>0233394847</td>
-    <td>11/06/2023</td>
+    <!-- <td>11/06/2023</td> -->
     <td><i class="fa fa-ellipsis-v" aria-hidden="true" style="margin-left: 1em;"></i></td>
 
 </tr>
 
+<tr>
+    <td> <a href="lily-sam.html" style="color: #091E42; !important">Lily Sam </a></td>
+    <td>KSA8 IFF</td>
+    <td>Yellow</td>
+    <td>52vwc10038</td>
+    <td>lilysam.mail</td>
+    <td>0233394847</td>
+    <!-- <td>0/06/2023</td> -->
+    <td><i class="fa fa-ellipsis-v" aria-hidden="true" style="margin-left: 1em;" ></i></td>
 
+
+
+</tr>
 <tr>
     <td>Ojo Wale</td>
     <td>VX51DDL</td>
     <td>Black</td>
     <td>52vwc10038</td>
-    <td>Car painting</td>
+    <td>ojowale.mail</td>
     <td>0233394847</td>
-    <td>02/06/2023</td>
+    <!-- <td>02/06/2023</td> -->
     <td><i class="fa fa-ellipsis-v" aria-hidden="true" style="margin-left: 1em;"></i></td>
 
 </tr>
@@ -305,15 +318,13 @@
 
 
 
-<!-- Button trigger modal -->
-
   
-  <!-- Modal -->
+  <!-- Add modal -->
   <div class="modal fade come-from-modal right" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Add Bookings</h5>
+          <h5 class="modal-title" id="exampleModalLabel">Add New Client</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
 
@@ -456,11 +467,13 @@
     </div>
   </div>
 
+
+  <!-- Edit modal -->
   <div class="modal fade come-from-modal right" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header" style="background-color: #ffffff;">
-          <h5 class="modal-title" id="exampleModalLabel">Edit Bookings</h5>
+          <h5 class="modal-title" id="exampleModalLabel">Edit Client Details</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
 

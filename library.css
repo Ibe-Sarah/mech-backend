@@ -1,0 +1,31 @@
+.library-dropdown{
+    display: flex;
+    justify-content: space-around;
+    gap: 15em;
+    position: absolute;
+    top: 25%;
+    left: 22%;
+}
+
+.first-drop{
+    display: flex;
+    gap: 1em;
+}
+.second-drop{
+    display: flex;
+}
+.second-drop input{
+    padding-left: 2em;
+}
+.library-image{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    position: absolute;
+    top: 40%;
+    left: 21%;
+    gap: 0.5em;
+}
+.library-image img{
+    width: 13rem;
+}

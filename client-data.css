@@ -9,7 +9,7 @@
 background-color: #ffffff;
 position: absolute;
 top: 35%;
-left:18.9%;
+left:23%;
 padding: 1em 2em;
 border-radius: 5px;
 }
@@ -61,7 +61,7 @@ flex-direction: column;
 .comment{
 position: absolute;
 top: 85%;
-left:18.9%;
+left:23%;
 
 }
 .need{
