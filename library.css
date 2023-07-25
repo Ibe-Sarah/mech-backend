@@ -3,7 +3,7 @@
     justify-content: space-around;
     gap: 10em;
     position: absolute;
-    top: 25%;
+    top: 30%;
     left: 22%;
 }
 
@@ -12,14 +12,24 @@
     gap: 1em;
 }
 
-.first-drop .dropdown{
 
+.first-drop button{
+border: 1px solid #0047B3;
+color: #0047B3;
+border-radius: 7px;
+font-family: 'Archivo', sans-serif;
+font-weight: 500;
 }
 .second-drop{
     display: flex;
 }
 .second-drop input{
     padding-left: 1.5em;
+    width: 80%;
+    color: #6D7175;
+    border: 1px solid #6D7175 !important;
+    font-family: 'Archivo', sans-serif;
+    border-radius: 5px;
 }
 .library-image{
     display: grid;
@@ -33,3 +43,19 @@
 .library-image img{
     width: 13rem;
 }
+.image-details{
+    padding-left: 4em;
+    padding-top: 5em;
+}
+
+.image-details div{
+    display: flex;
+    justify-content: left;
+    gap: 6.7em;
+    text-align: left;
+    padding-left: 1em;
+    font-family: 'Archivo', sans-serif;
+    font-weight: 500;
+    color: #091E42;
+}
+

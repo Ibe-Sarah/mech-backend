@@ -74,8 +74,8 @@
             Pages
             <i class="fas fa-chevron-down chevron"></i>
             <ul class="submenu">
-              <li>About</li>
-              <li>Contact</li>
+             <a href="pages.html" ><li>All Pages</li></a>
+              <li>Add New</li>
             </ul>
           </li>
           <li class="media">
@@ -84,7 +84,8 @@
             <i class="fas fa-chevron-down chevron"></i>
             <ul class="submenu">
              <a href="library.html" ><li class="focus" style="width: 111%; margin-left: -0.5em;">Library</li></a>
-              <li>Add New</li>
+             <a href="new-image.html" ><li style="width: 111%; margin-left: -0.5em;">Add New</li></a>
+
             </ul>
           </li>
           <li class="logout">
@@ -103,9 +104,9 @@
 
 
 
+<button style="position: absolute; top: 20%; left: 75%; background-color: #0047B3; border: none; color: white; font-family: 'Archivo', sans-serif;border-radius: 3px; font-size: 0.9em; padding: 0.7em 1.3em;">Add New image</button>
 
 <div class="library-dropdown">
-
 <div class="first-drop">
 
 <div class="dropdown">
@@ -119,12 +120,12 @@
     </ul>
   </div>
 
-  <div class="dropdown" >
+  <div class="dropdown"  >
     <button class="btn  dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" style="padding-right: 5em;">
       All dates
     </button>
     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-      <li><a class="dropdown-item" href="#">Electric Car</a></li>
+      <li ><a class="dropdown-item" href="#" >Electric Car</a></li>
       <li><a class="dropdown-item" href="#">SUV</a></li>
       <li><a class="dropdown-item" href="#">Family Car</a></li>
     </ul>
@@ -134,7 +135,7 @@
 </div>
 
 <div class="second-drop">
-    <i class="fa fa-search" aria-hidden="true" style="position:absolute; left: 77%; bottom: 25%; font-size: 15px;"></i>
+    <i class="fa fa-search" aria-hidden="true" style="position:absolute; left: 76%; bottom: 27%; font-size: 15px;"></i>
     <input type="search" placeholder="Search" >
 </div>
 
@@ -142,8 +143,8 @@
 
 
  <div class="library-image">
-    <img src="assets/Media card.png">
-    <img src="assets/Media card (1).png">
+    <img src="assets/Media card.png" onclick="showImage();" style="cursor: pointer;" id="image1" >
+    <img src="assets/Media card (1).png"  >
     <img src="assets/Media card (2).png">
     <img src="assets/Media card (1).png">
     <img src="assets/Media card (2).png">
@@ -159,8 +160,104 @@
 
  </div>
 
- 
 
+
+ <div class="overlay" id="image-overlay" style="left: 23%; top: 38%;">
+  <!-- Content of the overlay -->
+  <div class="ellip" style="display: flex; flex-direction: column;">
+    <div class="edit" style="display: flex;">
+      <img src="assets/Vector (3).png" width="20%" height="15%" >
+      <p data-bs-toggle="modal" data-bs-target="#viewImage">View</p>
+    </div>
+    <hr style=" border: 2px solid #f6f6f6; margin-top: -0.4em; width: 110%;">
+
+    <div class="view" style="display: flex;">
+      <img src="assets/Delete.png" width="20%" height="15%" >
+      <p style="color: #FD5353; cursor: pointer;" onclick="removeElement(image1)" >Delete</p>
+    </div>
+
+  </div>
+
+  <button onclick="hideImage()" style="background-color: #091E42; border: none; border-radius: 3px; padding: 0.3em 0.4em; color: #ffffff; margin-left: 2.5em; margin-top: 0.5em; " >Close</button>
+</div>
+
+ <div class="modal fade come-from-modal right" id="viewImage" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" >
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header" style="background-color: #ffffff; border-bottom: none;">
+        <h5 class="modal-title" id="exampleModalLabel">View Image</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+
+      <div class="modal-body" style="background-color: #ffffff !important;">
+        
+        <img src="assets/Media card (3).png" width="50%" style="margin-left:7.5em;">
+        
+        <div class="image-details">
+          <p style="font-family: 'Archivo' ,sans-serif; font-weight: 600; color: #091E42;">Information</p>
+
+          <div style="gap: 10em; background-color:#F5F6F7;">
+            <p>Title</p>
+            <p>Image-01</p>
+            <img src="assets/Edit.png" width="3%" height="3%" style="margin-left: -8em; margin-top: 0.5em;" >
+          </div>
+
+          <div style="gap: 10em !important; #EBEDF0">
+            <p>Size</p>
+            <p>2.5mb</p>
+            </div>
+
+            
+          <div style="gap: 8.8em !important;background-color:#F5F6F7;">
+
+            <p>Format</p>
+            <p>jpg</p>
+            </div>
+
+                  
+          <div style="gap: 7.5em !important; #EBEDF0">
+
+            <p>Uploaded</p>
+            <p>June13,2023</p>
+            </div>
+        
+              
+          <div style="gap:3em !important; background-color:#F5F6F7; padding-left: 0em;">
+            <div >
+
+              <p>Dimensions
+              <p>249x232</p>
+              </div>
+          
+
+          </div>
+        
+
+
+
+
+        <button class="modal-save"  style="background-color: #0047B3; padding: 0.3em 1em; color: white;">Save</button>
+
+      </div>
+
+
+      <div class="">
+       
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+<!-- JAVASCRIPT -->
       <script>
         window.addEventListener('DOMContentLoaded', (event) => {
           const submenuItems = document.querySelectorAll('.sidebar .chevron');
@@ -175,15 +272,25 @@
 
 
 
-        function showOverlay() {
-    var overlay = document.getElementById('overlay');
+        function showImage() {
+    var overlay = document.getElementById('image-overlay');
     overlay.style.display = 'block';
+              }
+
+function hideImage() {
+    var overlay = document.getElementById('image-overlay');
+    overlay.style.display = 'none';
+
 }
 
-function hideOverlay() {
-    var overlay = document.getElementById('overlay');
-    overlay.style.display = 'none';
+// delete functionality
+    function removeElement(ele) {
+
+    ele.parentNode.removeChild(ele);
 }
+
+removeElement(document.getElementById(""));
+
 
       </script>
     

@@ -1,0 +1,81 @@
+.upload{
+position: absolute;
+top: 45%;
+left: 20%;
+font-family: 'Archivo', sans-serif;
+font-weight: 600;
+}
+.browse{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 53%;
+left: 20%;
+background-color: #ffffff;
+padding: 4em 15em;
+border-radius: 5px;
+}
+
+.upload-btn i {
+    margin-right: 5px;
+  }
+  .icon {
+    margin-left: 0em;
+    margin-top: -2em !important;
+    width: 1.5em;
+    height: 1.5em;
+
+  }
+  
+  .upload-btn p{
+    font-family: 'Manrope', sans-serif;
+    color: #191D23;
+  }
+  /* Hide the file upload input field */
+  #file-upload {
+    display: none;
+  }
+
+  .browse button{
+    border: none;
+    background-color: transparent;
+  }
+
+  .progress-bar {
+    width: 100%;
+    height: 20px;
+    background-color: #ddd;
+  }
+  #progress {
+    width: 0%;
+    height: 100%;
+    background-color: #4CAF50;
+  }
+
+  .loading{
+    position: absolute;
+    top: 68%;
+    left: 45%;
+  }
+  .media-container{
+    display: flex;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    gap: 2em;
+    padding: 1em;
+    width: 60%;
+  }
+  .uploading{
+    display: flex;
+    flex-direction: column;
+  }
+  .upload-item{
+    display: flex;
+    gap: 5em;
+    
+  }
+  .upload-item p{
+    font-family: 'Archivo', sans-serif;
+    color: #191D23;
+  }

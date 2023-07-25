@@ -78,8 +78,9 @@
             Media
             <i class="fas fa-chevron-down chevron"></i>
             <ul class="submenu">
-              <li>Images</li>
-              <li>Videos</li>
+              <a href="library.html" ><li >Library</li></a>
+              <a href="new-image.html" ><li >Add New</li></a>
+
             </ul>
           </li>
           <li class="logout">
@@ -90,6 +91,7 @@
       </div>
 
 </div>
+
 
 <div class="breadcrumb">
     <h5>Bookings <span style="color: #003E9C; font-weight: 600;">| Pending</span></h5>
@@ -216,7 +218,7 @@
         <td>Spark plug...</td>
         <td>0233394847</td>
         <td>13/06/2023</td>
-        <td><i class="fa fa-ellipsis-v" aria-hidden="true" style="margin-left: 1em;"></i></td>
+        <td><i class="fa fa-ellipsis-v" aria-hidden="true" style="margin-left: 1em; cursor: pointer;" onclick="showImage()"></i></td>
 
   </tr>
 
@@ -319,7 +321,7 @@
 <!-- Button trigger modal -->
 
   
-  <!-- Modal -->
+  <!-- add modals -->
   <div class="modal fade come-from-modal right" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -467,6 +469,8 @@
     </div>
   </div>
 
+
+  <!-- edit modal -->
   <div class="modal fade come-from-modal right" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
