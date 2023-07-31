@@ -1,0 +1,48 @@
+textarea p{
+    font-family: 'Archivo', sans-serif;
+    color: #091E42;
+    font-weight: bold;
+}
+
+.upload{
+    position: absolute;
+    top: 45%;
+    left: 20%;
+    font-family: 'Archivo', sans-serif;
+    font-weight: 600;
+    }
+    .browse{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 53%;
+    left: 20%;
+    background-color: #ffffff;
+    padding: 4em 15em;
+    border-radius: 5px;
+    }
+    
+textarea .upload-btn i {
+        margin-right: 5px;
+      }
+   textarea  .icon {
+        margin-left: 0em;
+        margin-top: -2em !important;
+        width: 1.5em;
+        height: 1.5em;
+    
+      }
+      
+     textarea .upload-btn p{
+        font-family: 'Manrope', sans-serif;
+        color: #191D23;
+      }
+      /* Hide the file upload input field */
+      #file-upload {
+        display: none;
+      }
+    
+      .browse button{
+        border: none;
+        background-color: transparent;
+      }

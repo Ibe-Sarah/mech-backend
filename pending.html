@@ -11,6 +11,10 @@
     <link href="index.css" rel="stylesheet">
     <link href="overview.css" rel="stylesheet">
     <link href="pending.css" rel="stylesheet">
+    <link href="client-data.css" rel="stylesheet">
+    <link href="library.css" rel="stylesheet">
+
+
 
 
 </head>
@@ -18,7 +22,7 @@
     <nav class="navbar navbar-light bg-light">
         <div class="container-fluid">
           <form class="d-flex" style="flex-direction: row !important;">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"><img src="assets/Search.png" style="width: 2%; ; position: absolute; top: 41%; right: 114.5%;">
             <!-- <button class="btn btn-outline-success" type="submit">Search</button> -->
           </form>
 
@@ -48,13 +52,14 @@
           <li class="client">
             <i class="fas fa-user"></i>
             <a style="color: #091E42 !important;" href="clients.html"> Client Data</a>
+
             <!-- <i class="fas fa-chevron-down chevron"></i>
             <ul class="submenu">
               <li>Profile</li>
               <li>Contacts</li>
             </ul> -->
           </li>
-          <li class="bookings focus">
+          <li class="bookings">
             <i class="fas fa-calendar-alt"></i>
             <a style="color: #091E42 !important;" href="pending.html"> Bookings</a>
 
@@ -69,8 +74,9 @@
             Pages
             <i class="fas fa-chevron-down chevron"></i>
             <ul class="submenu">
-              <li>About</li>
-              <li>Contact</li>
+             <a href="pages.html" ><li>All Pages</li></a>
+             <a href="add-new-page.html" ><li>Add New</li></a>
+
             </ul>
           </li>
           <li class="media">
@@ -78,8 +84,8 @@
             Media
             <i class="fas fa-chevron-down chevron"></i>
             <ul class="submenu">
-              <a href="library.html" ><li >Library</li></a>
-              <a href="new-image.html" ><li >Add New</li></a>
+             <a href="library.html" ><li class="focus" style="width: 111%; margin-left: -0.5em;">Library</li></a>
+             <a href="new-image.html" ><li style="width: 111%; margin-left: -0.5em;">Add New</li></a>
 
             </ul>
           </li>
@@ -92,170 +98,173 @@
 
 </div>
 
+<div class="client-body" style="background-color: #f6f6f6; height: 112.5%;;">
+
+</div>
 
 <div class="breadcrumb">
-    <h5>Bookings <span style="color: #003E9C; font-weight: 600;">| Pending</span></h5>
-    <button data-bs-toggle="modal" data-bs-target="#exampleModal" style="margin-left: 2em;">Add Bookings</button>
+  <h5>Bookings <span style="color: #003E9C; font-weight: 600;">| Pending</span></h5>
+  <button data-bs-toggle="modal" data-bs-target="#exampleModal" style="margin-left: 2em;">Add Bookings</button>
 </div>
 
 
 <div class="dropdown-button">
-   <i class="fa fa-search" aria-hidden="true" style="position:absolute; left: 4%; bottom: 25%; font-size: 15px;"></i> <input type="search" placeholder="Abby Kate" >
+ <i class="fa fa-search" aria-hidden="true" style="position:absolute; left: 4%; bottom: 25%; font-size: 15px;"></i> <input type="search" placeholder="Abby Kate" >
 
 <div class="dropdown">
-    <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-      Period
-    </button>
-    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+  <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+    Period
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
 <div class="chips-cont">
-  <div class="chips">
-  <h6 style="background-color: #0047B3; color: white;">Today</h6>
-  <h6>This Week</h6>
-  <h6>This Month</h6>
-  <h6>This Year</h6>
+<div class="chips">
+<h6 style="background-color: #0047B3; color: white;">Today</h6>
+<h6>This Week</h6>
+<h6>This Month</h6>
+<h6>This Year</h6>
+</div>
+<div style="display: flex; gap: 1em; padding-left: 0.5em; padding-right: 0.3em;">
+  <div style="display: flex; flex-direction: column;">
+    <p style="font-family: 'Archivo', sans-serif; font-size: 0.8em; ">From</p>
+    <input type="date" style="padding-left: 0em; text-align: center; margin-top: -1em; font-family: 'Archivo', sans-serif; background-color: #F6F6F6; border: none; color: #7A8699;">
+
   </div>
-  <div style="display: flex; gap: 1em; padding-left: 0.5em; padding-right: 0.3em;">
-    <div style="display: flex; flex-direction: column;">
-      <p style="font-family: 'Archivo', sans-serif; font-size: 0.8em; ">From</p>
-      <input type="date" style="padding-left: 0em; text-align: center; margin-top: -1em; font-family: 'Archivo', sans-serif; background-color: #F6F6F6; border: none; color: #7A8699;">
 
-    </div>
+  <div style="display: flex; flex-direction: column; gap: 0em; padding-left: 0.5em; padding-right: 0.3em;">
+    <p style="font-family: 'Archivo', sans-serif; font-size: 0.8em;">To</p>
 
-    <div style="display: flex; flex-direction: column; gap: 0em; padding-left: 0.5em; padding-right: 0.3em;">
-      <p style="font-family: 'Archivo', sans-serif; font-size: 0.8em;">To</p>
-
-      <input type="date" style="padding-left: 0em; text-align: center; margin-top: -1em; font-family: 'Archivo', sans-serif; background-color: #F6F6F6; border: none; color: #7A8699;">
-    </div>
-    
+    <input type="date" style="padding-left: 0em; text-align: center; margin-top: -1em; font-family: 'Archivo', sans-serif; background-color: #F6F6F6; border: none; color: #7A8699;">
+  </div>
+  
+</div>
+</div>
   </div>
 </div>
-    </div>
-  </div>
 
-  <div class="dropdown">
-    <button class="btn  dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-      Car Type
-    </button>
-    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-      <li><a class="dropdown-item" href="#">Electric Car</a></li>
-      <li><a class="dropdown-item" href="#">SUV</a></li>
-      <li><a class="dropdown-item" href="#">Family Car</a></li>
-    </ul>
-  </div>
+<div class="dropdown">
+  <button class="btn  dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+    Car Type
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+    <li><a class="dropdown-item" href="#">Electric Car</a></li>
+    <li><a class="dropdown-item" href="#">SUV</a></li>
+    <li><a class="dropdown-item" href="#">Family Car</a></li>
+  </ul>
+</div>
 
-  <div class="dropdown">
-    <button class="btn  dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-      Color
-    </button>
-    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" style="padding-right: 0em !important; width: 30%;">
-      <li><a class="dropdown-item" href="#">Red</a></li>
-      <li><a class="dropdown-item" href="#">Blue</a></li>
-      <li><a class="dropdown-item" href="#">Green</a></li>
-      <li><a class="dropdown-item" href="#">Yellow</a></li>
-      <li><a class="dropdown-item" href="#">Black</a></li>
+<div class="dropdown">
+  <button class="btn  dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+    Color
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" style="padding-right: 0em !important; width: 30%;">
+    <li><a class="dropdown-item" href="#">Red</a></li>
+    <li><a class="dropdown-item" href="#">Blue</a></li>
+    <li><a class="dropdown-item" href="#">Green</a></li>
+    <li><a class="dropdown-item" href="#">Yellow</a></li>
+    <li><a class="dropdown-item" href="#">Black</a></li>
 
 
-    </ul>
-  </div>
-  <div class="dropdown">
-    <button class="btn  dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-      <img src="assets/sort_minor.png" width="36%" style="padding-right: 0.6em !important;">Sort
-    </button>
-    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-      <li><a class="dropdown-item" href="#">Most Recent</a></li>
-      <li><a class="dropdown-item" href="#">Oldest</a></li>
-      
+  </ul>
+</div>
+<div class="dropdown">
+  <button class="btn  dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+    <img src="assets/sort_minor.png" width="36%" style="padding-right: 0.6em !important;">Sort
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+    <li><a class="dropdown-item" href="#">Most Recent</a></li>
+    <li><a class="dropdown-item" href="#">Oldest</a></li>
+    
 
 
-    </ul>
-  </div>
-  <!-- <button> <img src="assets/sort_minor.png" width="40%" style="padding-right: 0.6em !important;">Sort</button> -->
+  </ul>
+</div>
+<!-- <button> <img src="assets/sort_minor.png" width="40%" style="padding-right: 0.6em !important;">Sort</button> -->
 
 </div>
 
 
 <div class="status">
-   <a href="pending.html"><h5 style="background-color: #E6F0FF; border-top: 1px solid black; font-weight: 600;color: #091E42; ">Pending(5)</h5></a>
-    <a href="progress.html"><h5>In Progress(3)</h5></a>
-   <a href="completed.html"><h5>Completed(2)</h5></a>
+ <a href="pending.html"><h5 style="background-color: #E6F0FF; border-top: 1px solid black; font-weight: 600;color: #091E42; ">Pending(5)</h5></a>
+  <a href="progress.html"><h5>In Progress(3)</h5></a>
+ <a href="completed.html"><h5>Completed(2)</h5></a>
 </div>
 
-<section style="background-color: #f6f6f6 !important; height: 112vh; width: 85%; margin-left: 12.5em; z-index: 0; margin-top: -43.8em; ">
+<section style="background-color: #f6f6f6 !important; height: 112vh; width: 85%; margin-left: 12.5em; z-index: 0; margin-top: -42.6em; ">
 
-  <div id="pagination-one" class="bottom-container" style="top: 48%; background-color: white !important; padding-top: 0em; padding-left: 0em; padding-right: 0em;">
-  <!-- <div class="client-data">
-    <h5>Clients Data</h5>
-    <button>View All</button>
-  </div> -->
+<div id="pagination-one" class="bottom-container" style="top: 48%; background-color: white !important; padding-top: 0em; padding-left: 0em; padding-right: 0em;">
+<!-- <div class="client-data">
+  <h5>Clients Data</h5>
+  <button>View All</button>
+</div> -->
 
-  <table  >
-    <tr class="head">
-        <th>Name</th>
-        <th>Plate Number</th>
-        <th>Car Color</th>
-        <th>Engine Number</th>
-        <th>Preferred Service</th>
-        <th>Phone Number</th>
-        <th>Date</th>
-        <th >Options</th>
-    </tr>
-    <tr>
-        <td>Abby Kate</td>
-        <td>LLI9 VBX</td>
-        <td>Red</td>
-        <td>52vwc10038</td>
-        <td>Car painting</td>
-        <td>0233394847</td>
-        <td>19/06/2023</td>
-        <td ><i class="fa fa-ellipsis-v" aria-hidden="true" style="margin-left: 1em; cursor: pointer;" onclick="showOverlay()" ></i></td>
-    </tr>
-
-    <tr>
-        <td>Abby Kate</td>
-        <td>LT63 NNA</td>
-        <td>Blue</td>
-        <td>52vwc10038</td>
-        <td>Spark plug...</td>
-        <td>0233394847</td>
-        <td>13/06/2023</td>
-        <td><i class="fa fa-ellipsis-v" aria-hidden="true" style="margin-left: 1em; cursor: pointer;" onclick="showImage()"></i></td>
-
+<table  >
+  <tr class="head">
+      <th>Name</th>
+      <th>Plate Number</th>
+      <th>Car Color</th>
+      <th>Engine Number</th>
+      <th>Preferred Service</th>
+      <th>Phone Number</th>
+      <th>Date</th>
+      <th >Options</th>
+  </tr>
+  <tr>
+      <td>Abby Kate</td>
+      <td>LLI9 VBX</td>
+      <td>Red</td>
+      <td>52vwc10038</td>
+      <td>Car painting</td>
+      <td>0233394847</td>
+      <td>19/06/2023</td>
+      <td ><i class="fa fa-ellipsis-v" aria-hidden="true" style="margin-left: 1em; cursor: pointer;" onclick="showOverlay()" ></i></td>
   </tr>
 
   <tr>
-    <td>Kamson Jill</td>
-    <td>KA44 TYS</td>
-    <td>Green</td>
-    <td>52vwc10038</td>
-    <td>Interior custo...</td>
-    <td>0233394847</td>
-    <td>11/06/2023</td>
-    <td><i class="fa fa-ellipsis-v" aria-hidden="true" style="margin-left: 1em;"></i></td>
+      <td>Abby Kate</td>
+      <td>LT63 NNA</td>
+      <td>Blue</td>
+      <td>52vwc10038</td>
+      <td>Spark plug...</td>
+      <td>0233394847</td>
+      <td>13/06/2023</td>
+      <td><i class="fa fa-ellipsis-v" aria-hidden="true" style="margin-left: 1em; cursor: pointer;" onclick="showImage()"></i></td>
 
 </tr>
 
 <tr>
-    <td>Lily Sam</td>
-    <td>KSA8 IFF</td>
-    <td>Yellow</td>
-    <td>52vwc10038</td>
-    <td>Car painting</td>
-    <td>0233394847</td>
-    <td>0/06/2023</td>
-    <td><i class="fa fa-ellipsis-v" aria-hidden="true" style="margin-left: 1em;" ></i></td>
+  <td>Kamson Jill</td>
+  <td>KA44 TYS</td>
+  <td>Green</td>
+  <td>52vwc10038</td>
+  <td>Interior custo...</td>
+  <td>0233394847</td>
+  <td>11/06/2023</td>
+  <td><i class="fa fa-ellipsis-v" aria-hidden="true" style="margin-left: 1em;"></i></td>
+
+</tr>
+
+<tr>
+  <td>Lily Sam</td>
+  <td>KSA8 IFF</td>
+  <td>Yellow</td>
+  <td>52vwc10038</td>
+  <td>Car painting</td>
+  <td>0233394847</td>
+  <td>0/06/2023</td>
+  <td><i class="fa fa-ellipsis-v" aria-hidden="true" style="margin-left: 1em;" ></i></td>
 
 
 
 </tr>
 <tr>
-    <td>Ojo Wale</td>
-    <td>VX51DDL</td>
-    <td>Black</td>
-    <td>52vwc10038</td>
-    <td>Car painting</td>
-    <td>0233394847</td>
-    <td>02/06/2023</td>
-    <td><i class="fa fa-ellipsis-v" aria-hidden="true" style="margin-left: 1em;"></i></td>
+  <td>Ojo Wale</td>
+  <td>VX51DDL</td>
+  <td>Black</td>
+  <td>52vwc10038</td>
+  <td>Car painting</td>
+  <td>0233394847</td>
+  <td>02/06/2023</td>
+  <td><i class="fa fa-ellipsis-v" aria-hidden="true" style="margin-left: 1em;"></i></td>
 
 </tr>
 </table>
@@ -265,28 +274,28 @@
 <!-- ellipsis modal -->
 
 <div class="overlay" id="overlay">
-    <!-- Content of the overlay -->
-    <div class="ellip" style="display: flex; flex-direction: column;">
-      <div class="edit" style="display: flex;">
-        <img src="assets/Edit.png" width="20%" height="15%" >
-        <p data-bs-toggle="modal" data-bs-target="#exampleModal1"  >Edit</p>
-      </div>
-      <hr style=" border: 2px solid #f6f6f6; margin-top: -0.4em; width: 110%;">
+  <!-- Content of the overlay -->
+  <div class="ellip" style="display: flex; flex-direction: column;">
+    <div class="edit" style="display: flex;">
+      <img src="assets/Edit.png" width="20%" height="15%" >
+      <p data-bs-toggle="modal" data-bs-target="#exampleModal1"  >Edit</p>
+    </div>
+    <hr style=" border: 2px solid #f6f6f6; margin-top: -0.4em; width: 110%;">
 
-      <div class="view" style="display: flex;">
-        <img src="assets/Vector (1).png" width="20%" height="15%" >
-        <p>View</p>
-      </div>
-
+    <div class="view" style="display: flex;">
+      <img src="assets/Vector (1).png" width="20%" height="15%" >
+      <p>View</p>
     </div>
 
-    <!-- <button onclick="hideOverlay()">Close</button> -->
+  </div>
+
+  <!-- <button onclick="hideOverlay()">Close</button> -->
 </div>
 
 
 <!-- Button trigger modal -->
 <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-  Launch demo modal
+Launch demo modal
 </button> -->
 
 <!-- Modal -->
@@ -294,366 +303,367 @@
 <!-- <div style="position: absolute; left: 50%;" id="pagination-two"><h1>I am on page 2</h1></div> -->
 
 <nav aria-label="Page navigation example" class="pagess">
-    <ul class="pagination">
-      <li class="page-item">
-        <a class="page-link" href="#" aria-label="Previous">
-          <span aria-hidden="true">&laquo;</span>
-        </a>
-      </li>
-      <li class="page-item"><a class="page-link" href="#pagination-one">1</a></li>
-      <li class="page-item"><a class="page-link" href="#pagination-two">2</a></li>
-      <li class="page-item"><a class="page-link" href="#">...</a></li>
-      <li class="page-item"><a class="page-link" href="#pagination-two">9</a></li>
-      <li class="page-item"><a class="page-link" href="#pagination-two">10</a></li>
+  <ul class="pagination">
+    <li class="page-item">
+      <a class="page-link" href="#" aria-label="Previous">
+        <span aria-hidden="true">&laquo;</span>
+      </a>
+    </li>
+    <li class="page-item"><a class="page-link" href="#pagination-one">1</a></li>
+    <li class="page-item"><a class="page-link" href="#pagination-two">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">...</a></li>
+    <li class="page-item"><a class="page-link" href="#pagination-two">9</a></li>
+    <li class="page-item"><a class="page-link" href="#pagination-two">10</a></li>
 
 
-      <li class="page-item">
-        <a class="page-link" href="#" aria-label="Next">
-          <span aria-hidden="true">&raquo;</span>
-        </a>
-      </li>
-    </ul>
-  </nav>
+    <li class="page-item">
+      <a class="page-link" href="#" aria-label="Next">
+        <span aria-hidden="true">&raquo;</span>
+      </a>
+    </li>
+  </ul>
+</nav>
 
 
 
 
 <!-- Button trigger modal -->
 
-  
-  <!-- add modals -->
-  <div class="modal fade come-from-modal right" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Add Bookings</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
+
+<!-- add modals -->
+<div class="modal fade come-from-modal right" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Add Bookings</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
 
 
-        <div class="modal-body">
-          
-            <form style="background-color: #f6f6f6 !important; border: none !important; border-bottom: none !important;">
-                <div class="first-col">
-                <label>First Name*</label>
-                <input type="text" placeholder="Abby">
+      <div class="modal-body">
+        
+          <form style="background-color: #f6f6f6 !important; border: none !important; border-bottom: none !important;">
+              <div class="first-col">
+              <label>First Name*</label>
+              <input type="text" placeholder="Abby">
 
-                <label>Email</label>
-                <input type="email" placeholder="abbykate.mail">
+              <label>Email</label>
+              <input type="email" placeholder="abbykate.mail">
 
-                <label>Plate Number</label>
-                <input type="text" placeholder="LL19 VBX">
+              <label>Plate Number</label>
+              <input type="text" placeholder="LL19 VBX">
 
-                <label>Car Type</label>
-                   <div class="dropdown">
-                   <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                   Electric Car
-                   </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                 <li><a class="dropdown-item" href="#">Today</a></li>
-                 <li><a class="dropdown-item" href="#">This Week</a></li>
-                 <li><a class="dropdown-item" href="#">This Month</a></li>
-                </ul>
-            </div>
+              <label>Car Type</label>
+                 <div class="dropdown">
+                 <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                 Electric Car
+                 </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+               <li><a class="dropdown-item" href="#">Today</a></li>
+               <li><a class="dropdown-item" href="#">This Week</a></li>
+               <li><a class="dropdown-item" href="#">This Month</a></li>
+              </ul>
+          </div>
 
-            <label>Engine Number</label>
-            <div class="dropdown">
-            <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-          52vwc10038
-              </button>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-            <li><a class="dropdown-item" href="#">Today</a></li>
-            <li><a class="dropdown-item" href="#">This Week</a></li>
-            <li><a class="dropdown-item" href="#">This Month</a></li>
-            </ul>
-            </div>
-
-            <label>Preferred Service</label>
-             <div class="dropdown">
-            <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-             Car Painting
-                </button>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-            <li><a class="dropdown-item" href="#">Today</a></li>
-            <li><a class="dropdown-item" href="#">This Week</a></li>
-            <li><a class="dropdown-item" href="#">This Month</a></li>
-            </ul>
-            </div>
-
-            <label>Location</label>
-             <div class="dropdown">
-            <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-              Select
-             </button>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-<li><a class="dropdown-item" href="#">Today</a></li>
-<li><a class="dropdown-item" href="#">This Week</a></li>
-<li><a class="dropdown-item" href="#">This Month</a></li>
-            </ul>
-            </div>
-
-
-                </div>
-
-                <div class="second-col">
-                    <label>Last Name*</label>
-                    <input type="text" placeholder="Abby">
-    
-                    <label>Phone</label>
-                    <input type="tel" placeholder="0233394847">
-    
-                    <label>Car Color</label>
-                   <div class="dropdown">
-                   <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                   Select
-                   </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                 <li><a class="dropdown-item" href="#">Today</a></li>
-                 <li><a class="dropdown-item" href="#">This Week</a></li>
-                 <li><a class="dropdown-item" href="#">This Month</a></li>
-                </ul>
-            </div>
-
-            <label>Chasis Number</label>
-            <div class="dropdown">
-            <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                967856
-              </button>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-            <li><a class="dropdown-item" href="#">Today</a></li>
-            <li><a class="dropdown-item" href="#">This Week</a></li>
-            <li><a class="dropdown-item" href="#">This Month</a></li>
-            </ul>
-            </div>
-
-            <label>Model</label>
-             <div class="dropdown">
-            <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-             CS-250
-                </button>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-            <li><a class="dropdown-item" href="#">Today</a></li>
-            <li><a class="dropdown-item" href="#">This Week</a></li>
-            <li><a class="dropdown-item" href="#">This Month</a></li>
-            </ul>
-            </div>
-
-            <label>Date</label>
-            <input type="text" placeholder="DD/MM/YY">
-
-            <label>Status</label>
-            <div class="dropdown">
-            <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-            Select
+          <label>Engine Number</label>
+          <div class="dropdown">
+          <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+        52vwc10038
             </button>
-         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
           <li><a class="dropdown-item" href="#">Today</a></li>
           <li><a class="dropdown-item" href="#">This Week</a></li>
           <li><a class="dropdown-item" href="#">This Month</a></li>
-         </ul>
-     </div>
+          </ul>
+          </div>
 
-  
-                </div>
-
-            </form>
-              <button class="modal-save">Save</button>
-
-        </div>
-
-
-        <div class="">
-         
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-  <!-- edit modal -->
-  <div class="modal fade come-from-modal right" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header" style="background-color: #ffffff;">
-          <h5 class="modal-title" id="exampleModalLabel">Edit Bookings</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-
-
-        <div class="modal-body">
-          
-            <form style="background-color: #f6f6f6 !important; border: none !important; border-bottom: none !important;">
-                <div class="first-col">
-                <label>First Name*</label>
-                <input type="text" placeholder="Abby">
-
-                <label>Email</label>
-                <input type="email" placeholder="abbykate.mail">
-
-                <label>Plate Number</label>
-                <input type="text" placeholder="LL19 VBX">
-
-                <label>Car Type</label>
-                   <div class="dropdown">
-                   <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                   Electric Car
-                   </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                 <li><a class="dropdown-item" href="#">Today</a></li>
-                 <li><a class="dropdown-item" href="#">This Week</a></li>
-                 <li><a class="dropdown-item" href="#">This Month</a></li>
-                </ul>
-            </div>
-
-            <label>Engine Number</label>
-            <div class="dropdown">
-            <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-          52vwc10038
+          <label>Preferred Service</label>
+           <div class="dropdown">
+          <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+           Car Painting
               </button>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-            <li><a class="dropdown-item" href="#">Today</a></li>
-            <li><a class="dropdown-item" href="#">This Week</a></li>
-            <li><a class="dropdown-item" href="#">This Month</a></li>
-            </ul>
-            </div>
-
-            <label>Preferred Service</label>
-             <div class="dropdown">
-            <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-             Car Painting
-                </button>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-            <li><a class="dropdown-item" href="#">Today</a></li>
-            <li><a class="dropdown-item" href="#">This Week</a></li>
-            <li><a class="dropdown-item" href="#">This Month</a></li>
-            </ul>
-            </div>
-
-            <label>Location</label>
-             <div class="dropdown">
-            <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-              Select
-             </button>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-<li><a class="dropdown-item" href="#">Today</a></li>
-<li><a class="dropdown-item" href="#">This Week</a></li>
-<li><a class="dropdown-item" href="#">This Month</a></li>
-            </ul>
-            </div>
-
-
-                </div>
-
-                <div class="second-col">
-                    <label>Last Name*</label>
-                    <input type="text" placeholder="Abby">
-    
-                    <label>Phone</label>
-                    <input type="tel" placeholder="0233394847">
-    
-                    <label>Car Color</label>
-                   <div class="dropdown">
-                   <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                   Select
-                   </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                 <li><a class="dropdown-item" href="#">Today</a></li>
-                 <li><a class="dropdown-item" href="#">This Week</a></li>
-                 <li><a class="dropdown-item" href="#">This Month</a></li>
-                </ul>
-            </div>
-
-            <label>Chasis Number</label>
-            <div class="dropdown">
-            <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                967856
-              </button>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-            <li><a class="dropdown-item" href="#">Today</a></li>
-            <li><a class="dropdown-item" href="#">This Week</a></li>
-            <li><a class="dropdown-item" href="#">This Month</a></li>
-            </ul>
-            </div>
-
-            <label>Model</label>
-             <div class="dropdown">
-            <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-             CS-250
-                </button>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-            <li><a class="dropdown-item" href="#">Today</a></li>
-            <li><a class="dropdown-item" href="#">This Week</a></li>
-            <li><a class="dropdown-item" href="#">This Month</a></li>
-            </ul>
-            </div>
-
-            <label>Date</label>
-            <input type="text" placeholder="DD/MM/YY">
-
-            <label>Status</label>
-            <div class="dropdown">
-            <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-            Select
-            </button>
-         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
           <li><a class="dropdown-item" href="#">Today</a></li>
           <li><a class="dropdown-item" href="#">This Week</a></li>
           <li><a class="dropdown-item" href="#">This Month</a></li>
-         </ul>
-     </div>
+          </ul>
+          </div>
 
+          <label>Location</label>
+           <div class="dropdown">
+          <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+            Select
+           </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+<li><a class="dropdown-item" href="#">Today</a></li>
+<li><a class="dropdown-item" href="#">This Week</a></li>
+<li><a class="dropdown-item" href="#">This Month</a></li>
+          </ul>
+          </div>
+
+
+              </div>
+
+              <div class="second-col">
+                  <label>Last Name*</label>
+                  <input type="text" placeholder="Abby">
   
-                </div>
+                  <label>Phone</label>
+                  <input type="tel" placeholder="0233394847">
+  
+                  <label>Car Color</label>
+                 <div class="dropdown">
+                 <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                 Select
+                 </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+               <li><a class="dropdown-item" href="#">Today</a></li>
+               <li><a class="dropdown-item" href="#">This Week</a></li>
+               <li><a class="dropdown-item" href="#">This Month</a></li>
+              </ul>
+          </div>
 
-            </form>
-       <button  style="background-color: #091E42; padding: 0.7em 3em; color: white;" class="modal-save">Update</button>
+          <label>Chasis Number</label>
+          <div class="dropdown">
+          <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+              967856
+            </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+          <li><a class="dropdown-item" href="#">Today</a></li>
+          <li><a class="dropdown-item" href="#">This Week</a></li>
+          <li><a class="dropdown-item" href="#">This Month</a></li>
+          </ul>
+          </div>
 
-            </div>
+          <label>Model</label>
+           <div class="dropdown">
+          <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+           CS-250
+              </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+          <li><a class="dropdown-item" href="#">Today</a></li>
+          <li><a class="dropdown-item" href="#">This Week</a></li>
+          <li><a class="dropdown-item" href="#">This Month</a></li>
+          </ul>
+          </div>
+
+          <label>Date</label>
+          <input type="text" placeholder="DD/MM/YY">
+
+          <label>Status</label>
+          <div class="dropdown">
+          <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+          Select
+          </button>
+       <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+        <li><a class="dropdown-item" href="#">Today</a></li>
+        <li><a class="dropdown-item" href="#">This Week</a></li>
+        <li><a class="dropdown-item" href="#">This Month</a></li>
+       </ul>
+   </div>
 
 
-        <div class="">
-         
-        </div>
+              </div>
+
+          </form>
+            <button class="modal-save">Save</button>
+
+      </div>
+
+
+      <div class="">
+       
       </div>
     </div>
   </div>
+</div>
 
-      <script>
-        window.addEventListener('DOMContentLoaded', (event) => {
-          const submenuItems = document.querySelectorAll('.sidebar .chevron');
-          submenuItems.forEach(item => {
-            item.addEventListener('click', () => {
-              const parent = item.parentNode;
-              parent.classList.toggle('open');
-              item.classList.toggle('rotate');
-            });
+
+<!-- edit modal -->
+<div class="modal fade come-from-modal right" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header" style="background-color: #ffffff;">
+        <h5 class="modal-title" id="exampleModalLabel">Edit Bookings</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+
+      <div class="modal-body" style="background-color: #ffffff;">
+        
+          <form style="background-color: #ffffff !important; border: none !important; border-bottom: none !important;">
+              <div class="first-col">
+              <label>First Name*</label>
+              <input type="text" placeholder="Abby">
+
+              <label>Email</label>
+              <input type="email" placeholder="abbykate.mail">
+
+              <label>Plate Number</label>
+              <input type="text" placeholder="LL19 VBX">
+
+              <label>Car Type</label>
+                 <div class="dropdown">
+                 <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                 Electric Car
+                 </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+               <li><a class="dropdown-item" href="#">Today</a></li>
+               <li><a class="dropdown-item" href="#">This Week</a></li>
+               <li><a class="dropdown-item" href="#">This Month</a></li>
+              </ul>
+          </div>
+
+          <label>Engine Number</label>
+          <div class="dropdown">
+          <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+        52vwc10038
+            </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+          <li><a class="dropdown-item" href="#">Today</a></li>
+          <li><a class="dropdown-item" href="#">This Week</a></li>
+          <li><a class="dropdown-item" href="#">This Month</a></li>
+          </ul>
+          </div>
+
+          <label>Preferred Service</label>
+           <div class="dropdown">
+          <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+           Car Painting
+              </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+          <li><a class="dropdown-item" href="#">Today</a></li>
+          <li><a class="dropdown-item" href="#">This Week</a></li>
+          <li><a class="dropdown-item" href="#">This Month</a></li>
+          </ul>
+          </div>
+
+          <label>Location</label>
+           <div class="dropdown">
+          <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+            Select
+           </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+<li><a class="dropdown-item" href="#">Today</a></li>
+<li><a class="dropdown-item" href="#">This Week</a></li>
+<li><a class="dropdown-item" href="#">This Month</a></li>
+          </ul>
+          </div>
+
+
+              </div>
+
+              <div class="second-col">
+                  <label>Last Name*</label>
+                  <input type="text" placeholder="Abby">
+  
+                  <label>Phone</label>
+                  <input type="tel" placeholder="0233394847">
+  
+                  <label>Car Color</label>
+                 <div class="dropdown">
+                 <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                 Select
+                 </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+               <li><a class="dropdown-item" href="#">Today</a></li>
+               <li><a class="dropdown-item" href="#">This Week</a></li>
+               <li><a class="dropdown-item" href="#">This Month</a></li>
+              </ul>
+          </div>
+
+          <label>Chasis Number</label>
+          <div class="dropdown">
+          <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+              967856
+            </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+          <li><a class="dropdown-item" href="#">Today</a></li>
+          <li><a class="dropdown-item" href="#">This Week</a></li>
+          <li><a class="dropdown-item" href="#">This Month</a></li>
+          </ul>
+          </div>
+
+          <label>Model</label>
+           <div class="dropdown">
+          <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+           CS-250
+              </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+          <li><a class="dropdown-item" href="#">Today</a></li>
+          <li><a class="dropdown-item" href="#">This Week</a></li>
+          <li><a class="dropdown-item" href="#">This Month</a></li>
+          </ul>
+          </div>
+
+          <label>Date</label>
+          <input type="text" placeholder="DD/MM/YY">
+
+          <label>Status</label>
+          <div class="dropdown">
+          <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+          Select
+          </button>
+       <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+        <li><a class="dropdown-item" href="#">Today</a></li>
+        <li><a class="dropdown-item" href="#">This Week</a></li>
+        <li><a class="dropdown-item" href="#">This Month</a></li>
+       </ul>
+   </div>
+
+
+              </div>
+
+          </form>
+     <button  style="background-color: #091E42; padding: 0.7em 3em; color: white;" class="modal-save">Update</button>
+
+          </div>
+
+
+      <div class="">
+       
+      </div>
+    </div>
+  </div>
+</div>
+
+    <script>
+      window.addEventListener('DOMContentLoaded', (event) => {
+        const submenuItems = document.querySelectorAll('.sidebar .chevron');
+        submenuItems.forEach(item => {
+          item.addEventListener('click', () => {
+            const parent = item.parentNode;
+            parent.classList.toggle('open');
+            item.classList.toggle('rotate');
           });
         });
+      });
 
 
 
-        function showOverlay() {
-    var overlay = document.getElementById('overlay');
-    overlay.style.display = 'block';
+      function showOverlay() {
+  var overlay = document.getElementById('overlay');
+  overlay.style.display = 'block';
 }
 
 function hideOverlay() {
-    var overlay = document.getElementById('overlay');
-    overlay.style.display = 'none';
+  var overlay = document.getElementById('overlay');
+  overlay.style.display = 'none';
 }
 
-      </script>
+    </script>
+  
+
+
+
+
+
     
-
-
-
-
-
-      
-      
-      
-      
-      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
 </body>
 </html>

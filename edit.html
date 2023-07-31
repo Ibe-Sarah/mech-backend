@@ -8,7 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
  <!-- <script src="https://cdn.ckeditor.com/ckeditor5/38.1.1/classic/ckeditor.js"></script> -->
-
+ <link href="https://cdn.jsdelivr.net/npm/froala-editor@latest/css/froala_editor.pkgd.min.css" rel="stylesheet" type="text/css" />
     <link href="index.css" rel="stylesheet">
     <link href="overview.css" rel="stylesheet">
     <link href="pending.css" rel="stylesheet">
@@ -17,6 +17,8 @@
     <link href="pages.css" rel="stylesheet">
     <link href="new-image.css" rel="stylesheet">
 
+
+    <script type="text/javascript" src="ckeditor_4.22.1_standard/ckeditor/ckeditor.js"></script>
 
 
 
@@ -40,13 +42,11 @@
 
 
       </nav>
-
-    <div class="sidebar-container" style="height: 182vh !important; ">
+<div class="sidebar-container">
     
       <img  style=" margin-left: 3em; width: 5em; padding-top: 1.3em;     border-bottom: 2px solid #B0B0B0;
       margin-right: auto;" src="assets/Frame 6.png">
       <hr style=" border-bottom: 2px solid #b0b0b0; width: 675%;">
-
       <div class="sidebar">
 
         <ul>
@@ -74,13 +74,12 @@
             <ul class="submenu">
               <li>Upcoming</li>
               <li>Past</li>
-            </ul> --> 
+            </ul> -->
           </li>
           <li class="pages">
-            <div  style="background-color: #7AC769; padding-top: 0.5em; padding-bottom: 0.5em; padding-left: 0.6em; padding-right: 1.5em; width: 111.5%; margin-left: -0.6em;"> <i class="fas fa-file"></i>
-              Pages</div>
-              <i class="fas fa-chevron-down chevron" style="margin-top: -1.7em;"></i>
-            
+            <i class="fas fa-file"></i>
+            Pages
+            <i class="fas fa-chevron-down chevron"></i>
             <ul class="submenu">
              <a href="pages.html" ><li class="focus" style="width: 111%; margin-left: -0.5em;">All Pages</li></a>
              <a href="add-new-page.html" ><li>Add New</li></a>
@@ -106,24 +105,19 @@
 
 </div>
 
-<div class="client-body" style="background-color: #f6f6f6; height: 170%;;">
+<div class="client-body" style="background-color: #f6f6f6; height: 112.5%;;">
 
 </div>
 
 
 
-<div class="breadcrumb" style="gap:33em; left: 20%;" >
-    <h5>Pages  <span style="color: #003E9C; font-weight: 600;">| All Pages</span></h5>
- 
-</div>
+<div class="breadcrumb" style="gap:33em; left: 18%;" >
+    <h5>Pages |All Pages |About Us <span style="color: #003E9C; font-weight: 600;">| Edit</span></h5>
 
-<div class="breadcrumb-lower" >
-    <div style="display: flex; gap: 1em;">
-
-<div style="display: flex; " class="bread">
+    <div style="display: flex;">
     <div class="dropdown">
         <button class="btn  dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" style="padding-right: 2em; background-color: #ffffff;">
-      Bulk actions
+          Preview
         </button>
         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
           <li><a class="dropdown-item" href="#">Electric Car</a></li>
@@ -132,106 +126,52 @@
         </ul>
       </div>
 
-    <button style="margin-left: 2em;">Apply</button>
+    <button data-bs-toggle="modal" data-bs-target="#exampleModal" style="margin-left: 2em;">Publish</button>
     </div>
-    
-<div style="display: flex;" class="crumb">
-    <div class="dropdown">
-        <button class="btn  dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" style="padding-right: 2em; background-color: #ffffff;">
-      All dates
-        </button>
-        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-          <li><a class="dropdown-item" href="#">Electric Car</a></li>
-          <li><a class="dropdown-item" href="#">SUV</a></li>
-          <li><a class="dropdown-item" href="#">Family Car</a></li>
-        </ul>
-      </div>
-
-    <button style="margin-left: 2em;">Filter</button>
-    </div>
-    </div>
-
-    <div class="">
-        <i class="fa fa-search" aria-hidden="true" style="position:absolute; left: 76%; bottom: 25%; font-size: 15px;"></i> <input type="search"  style="padding-left: 2em; border: 1px solid #AEB4B9; border-radius: 4px;"  placeholder="Search" >
-    </div>
-
 </div>
 
-<div class="status" id="status">
-    <a href="pages.html"><h5 style="background-color: #E6F0FF; border-top: 1px solid black; font-weight: 600;color: #091E42; ">All(5)</h5></a>
-     <a href="published.html"><h5>Published(3)</h5></a>
-    <a href="drafts.html"><h5>Drafts(1)</h5></a>
- </div>
 
- <table class="pages-table"  >
-    <tr class="table-tr">
-        <th><input type="checkbox"></th>
-        <th>Title</th>
-        <th>Author</th>
-        <th>Date</th>
-        
-    </tr>
-    <tr style="background-color: #EBEDF0;">
-        <td><input type="checkbox" style="border:1px solid #091E42 !important; background-color:#EBEDF0;" ></td>
-        <td>
-          <div>About us 
-            <p style="cursor: pointer;"> <a href="edit.html" style="color: #091E42 !important;"> Edit |</a> <span style="color: #BE0606;"> Trash</span> | View</p>
-          </div></td>
-        <td>Admin</td>
-        <td>Published <br>20/06/2023 at 11am</td>
-       
-    </tr>
+<button  onclick='window.location.href = "pending.html"' class="back"><img src="assets/Vector (2).png" width="22%" height="22%"> Back</button>
 
-    <tr style="background-color: #FFFFFF;">
-        <td><input type="checkbox"></td>
-        <td>Services</td>
-        <td>Admin</td>
-        <td>Published <br>20/06/2023 at 11am</td>
-       
 
-  </tr>
+<div style="position: absolute; left: 18%; width: 75%; top: 43%;">
+<!-- <textarea id="htmeditor" >Welcome to SNT, your trusted destination for exceptional automotive services. With a passion for cars and a commitment to excellence, we are dedicated to providing top-notch repairs, maintenance, and customization solutions to meet all your 
+    automotive needs. With a passion for cars and a commitment to excellence, we are dedicated to providing top-notch repairs, maintenance, and 
+    customization solutions to meet all your automotive needs.
+    <br>
+    <br>
+    Welcome to SNT, your trusted destination for exceptional automotive services. With a passion for cars and a commitment to excellence, we are dedicated to providing top-notch repairs, maintenance, and customization solutions to meet all your 
+    automotive needs. With a passion for cars and a commitment to excellence, we are dedicated to providing top-notch repairs, maintenance, and 
+    customization solutions to meet all your automotive needs.
 
-  <tr style="background-color: #EBEDF0;">
-    <td><input type="checkbox"></td>
-    <td>Contact</td>
-    <td>Admin</td>
-    <td>Published <br>20/06/2023 at 11am</td>
 
-</tr>
+</textarea>
+ <script src="https://htmeditor.com/js/htmeditor.min.js" htmeditor_textarea="htmeditor" full_screen="no"  editor_height="480"  run_local="no"> </script>  -->
+ <textarea cols="" rows="40">Welcome to SNT, your trusted destination for exceptional automotive services. With a passion for cars and a commitment to excellence, we are dedicated to providing top-notch repairs, maintenance, and customization solutions to meet all your 
+    automotive needs. With a passion for cars and a commitment to excellence, we are dedicated to providing top-notch repairs, maintenance, and 
+    customization solutions to meet all your automotive needs.
+    <br>
+    <br>
+    Welcome to SNT, your trusted destination for exceptional automotive services. With a passion for cars and a commitment to excellence, we are dedicated to providing top-notch repairs, maintenance, and customization solutions to meet all your 
+    automotive needs. With a passion for cars and a commitment to excellence, we are dedicated to providing top-notch repairs, maintenance, and 
+    customization solutions to meet all your automotive needs.
+</textarea>
 
-<tr style="background-color: #FFFFFF;">
-    <td><input type="checkbox"></td>
-    <td><div>About us <p>Edit | <span style="color: #BE0606;"> Trash</span> | View</p></div></td>
-    <td>Admin</td>
-    <td>Published <br>20/06/2023 at 11am</td>
+ <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/froala-editor@latest/js/froala_editor.pkgd.min.js"></script>
+
+ <script>
+     new FroalaEditor('textarea');
+   </script>
    
+</div>
 
 
-
-</tr>
-<tr style="background-color: #EBEDF0;">
-
-    <td><input type="checkbox"></td>
-    <td><div>About us <p>Edit | <span style="color: #BE0606;"> Trash</span> | View</p></div></td>
-    <td>Admin</td>
-    <td>Published <br>20/06/2023 at 11am</td>
-       
-</tr>
-</table>
+<!-- text editor -->
 
 
 
 
-
-
-
-
-
-
-<!-- 
-<button  onclick='window.location.href = "pending.html"' class="back"><img src="assets/Vector (2).png" width="22%" height="22%"> Back</button> -->
-
-
+ <!-- <textarea id="textarea"></textarea> -->
 
 
 <!-- JAVASCRIPT -->

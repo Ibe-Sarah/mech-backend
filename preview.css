@@ -1,0 +1,32 @@
+.preview-cont{
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    background-color: #ffffff;
+    padding: 3em;
+    padding-bottom:2em;
+    padding-right: 0em;
+ 
+}
+.prev-img{
+    display: flex;
+    justify-content: center;
+    gap: 4em;
+    padding-top: 2.5em;
+    margin-left: -8em;
+    /* padding: 12px, 0px, 0px, 0px; */
+}
+.prev-img p{
+    text-align: left;
+    width: 30%;
+    font-family: 'Archivo', sans-serif;
+    font-weight: 400;
+    color: #091e42;
+    font-size: 1em;
+
+}
+.prev-img img{
+    width: 30%;
+    height: 30%;
+
+}

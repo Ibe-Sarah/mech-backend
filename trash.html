@@ -27,7 +27,7 @@
     <nav class="navbar navbar-light bg-light">
         <div class="container-fluid">
           <form class="d-flex" style="flex-direction: row !important;">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"><img src="assets/Search.png" style="width: 2%; ; position: absolute; top: 41%; right: 114.5%;">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
             <!-- <button class="btn btn-outline-success" type="submit">Search</button> -->
           </form>
 
@@ -40,7 +40,6 @@
 
 
       </nav>
-
     <div class="sidebar-container" style="height: 182vh !important; ">
     
       <img  style=" margin-left: 3em; width: 5em; padding-top: 1.3em;     border-bottom: 2px solid #B0B0B0;
@@ -74,13 +73,12 @@
             <ul class="submenu">
               <li>Upcoming</li>
               <li>Past</li>
-            </ul> --> 
+            </ul> -->
           </li>
           <li class="pages">
-            <div  style="background-color: #7AC769; padding-top: 0.5em; padding-bottom: 0.5em; padding-left: 0.6em; padding-right: 1.5em; width: 111.5%; margin-left: -0.6em;"> <i class="fas fa-file"></i>
-              Pages</div>
-              <i class="fas fa-chevron-down chevron" style="margin-top: -1.7em;"></i>
-            
+            <i class="fas fa-file"></i>
+            Pages
+            <i class="fas fa-chevron-down chevron"></i>
             <ul class="submenu">
              <a href="pages.html" ><li class="focus" style="width: 111%; margin-left: -0.5em;">All Pages</li></a>
              <a href="add-new-page.html" ><li>Add New</li></a>
@@ -158,12 +156,14 @@
 </div>
 
 <div class="status" id="status">
-    <a href="pages.html"><h5 style="background-color: #E6F0FF; border-top: 1px solid black; font-weight: 600;color: #091E42; ">All(5)</h5></a>
-     <a href="published.html"><h5>Published(3)</h5></a>
-    <a href="drafts.html"><h5>Drafts(1)</h5></a>
- </div>
+    <a href="pages.html"><h5>All(5)</h5></a>
+     <a href="published.html"><h5 >Published(3)</h5></a>
+    <a href="drafts.html"><h5 >Drafts(1)</h5></a>
+    <a href="trash.html"><h5 style="background-color: #E6F0FF; border-top: 1px solid black; font-weight: 600;color: #BE0606; ">Trash(1)</h5></a>
 
- <table class="pages-table"  >
+     </div>
+
+ <table class="pages-table" id="trashTable" >
     <tr class="table-tr">
         <th><input type="checkbox"></th>
         <th>Title</th>
@@ -171,52 +171,27 @@
         <th>Date</th>
         
     </tr>
-    <tr style="background-color: #EBEDF0;">
-        <td><input type="checkbox" style="border:1px solid #091E42 !important; background-color:#EBEDF0;" ></td>
-        <td>
-          <div>About us 
-            <p style="cursor: pointer;"> <a href="edit.html" style="color: #091E42 !important;"> Edit |</a> <span style="color: #BE0606;"> Trash</span> | View</p>
-          </div></td>
-        <td>Admin</td>
-        <td>Published <br>20/06/2023 at 11am</td>
-       
-    </tr>
-
-    <tr style="background-color: #FFFFFF;">
-        <td><input type="checkbox"></td>
-        <td>Services</td>
-        <td>Admin</td>
-        <td>Published <br>20/06/2023 at 11am</td>
-       
-
+   <tr >
+    <tr style="background-color: #EBEDF0;"  id="perm" >
+      <td><input type="checkbox" style="border:1px solid #091E42 !important; background-color:#EBEDF0;" ></td>
+      <td><div>Blog-Draft <p>Restore| <span style="color: #BE0606;  cursor: pointer;"  onclick="delPerm(perm)">  Delete Permananently</span></p></div></td>
+      <td>Admin</td>
+      <td>Published <br>20/06/2023 at 11am</td>
+     
   </tr>
 
-  <tr style="background-color: #EBEDF0;">
-    <td><input type="checkbox"></td>
-    <td>Contact</td>
-    <td>Admin</td>
-    <td>Published <br>20/06/2023 at 11am</td>
 
-</tr>
-
-<tr style="background-color: #FFFFFF;">
+<!-- <tr style="background-color: #FFFFFF;">
     <td><input type="checkbox"></td>
-    <td><div>About us <p>Edit | <span style="color: #BE0606;"> Trash</span> | View</p></div></td>
+    <td><div>Career-Draft <p>Edit | <span style="color: #BE0606;"> Trash</span> | Preview</p></div></td>
     <td>Admin</td>
     <td>Published <br>20/06/2023 at 11am</td>
    
 
 
 
-</tr>
-<tr style="background-color: #EBEDF0;">
+</tr> -->
 
-    <td><input type="checkbox"></td>
-    <td><div>About us <p>Edit | <span style="color: #BE0606;"> Trash</span> | View</p></div></td>
-    <td>Admin</td>
-    <td>Published <br>20/06/2023 at 11am</td>
-       
-</tr>
 </table>
 
 
@@ -261,16 +236,19 @@ function hideImage() {
 }
 
 // delete functionality
-    function removeElement(ele) {
+    function delPerm(ele) {
 
     ele.parentNode.removeChild(ele);
 }
 
 removeElement(document.getElementById(""));
-
-
-
 CKEDITOR.replace( 'textarea' );
+
+
+
+   // Retrieve the deleted row data from localStorage and append it to the trash 
+
+
 
       </script>
     

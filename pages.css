@@ -1,48 +1,49 @@
-textarea p{
-    font-family: 'Archivo', sans-serif;
-    color: #091E42;
-    font-weight: bold;
+.breadcrumb-lower{
+    display: flex;
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    gap: 10em;
 }
 
-.upload{
+.bread button, .crumb button{
+border: 1px solid #0047B3;
+color: #0047B3;
+font-family: 'Archivo', sans-serif;
+padding: 0.2em 0.9em;
+border-radius: 4px;
+}
+#status{
+top: 52%;
+left: 20%;
+}
+
+.pages-table{
     position: absolute;
-    top: 45%;
+    top: 57%;
     left: 20%;
-    font-family: 'Archivo', sans-serif;
-    font-weight: 600;
-    }
-    .browse{
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        top: 53%;
-    left: 20%;
-    background-color: #ffffff;
-    padding: 4em 15em;
-    border-radius: 5px;
-    }
-    
-textarea .upload-btn i {
-        margin-right: 5px;
-      }
-   textarea  .icon {
-        margin-left: 0em;
-        margin-top: -2em !important;
-        width: 1.5em;
-        height: 1.5em;
-    
-      }
-      
-     textarea .upload-btn p{
-        font-family: 'Manrope', sans-serif;
-        color: #191D23;
-      }
-      /* Hide the file upload input field */
-      #file-upload {
-        display: none;
-      }
-    
-      .browse button{
-        border: none;
-        background-color: transparent;
-      }
+}
+
+.table-tr th{
+padding-right: 10em;
+}
+
+.table-tr th:first-child {
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    padding-right: 0em;
+}
+
+.table-tr th:last-child {
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    padding-right: 18.3em;
+
+}
+
+.pages-table td{
+font-family: 'Archivo,' sans-serif;
+color: #091E42 !important;
+font-weight: 500;
+padding-bottom: 5em;
+}
