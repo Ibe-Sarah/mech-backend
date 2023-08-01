@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Mechanic-Backend-site</title>
     <link href="index.css" rel="stylesheet">
 
 
@@ -43,12 +43,26 @@
     
         <label>Password:<input id="password" type="password" >
       </label>
-      <i class="far fa-eye" id="togglePassword"></i>
+      <i class="far fa-eye" id="togglePassword" onclick="showPwd()" ondblclick="hidePwd()"></i>
       <div style="display: flex; ">
 <input  type="checkbox" ><p style="font-family: 'Archivo', sans-serif; color: #091E42;">Remember me</p>  <p style="padding-left: 5em; color: #0047B3; font-family: 'Archivo', sans-serif;">Forgot Password?</p></div>
 
 <button id="login" onclick='window.location.href = "overview.html"'>Login</button>
 </form>
     </div>
+
+
+<script>
+    function showPwd(){
+        const pwd= document.getElementById("password");
+        pwd.type="text"
+    }
+
+    function hidePwd(){
+        const pwd= document.getElementById("password");
+        pwd.type="password"
+    }
+</script>
+
 </body>
 </html>
