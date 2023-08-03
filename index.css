@@ -121,7 +121,7 @@ form button{
 .sidebar {
     width: 170px;
     /* height: 100vh; */
-    position: fixed;
+    /* position: fixed; */
     background-color: #ffffff;
     padding-top: 15px;
     /* margin-top: -5em; */
